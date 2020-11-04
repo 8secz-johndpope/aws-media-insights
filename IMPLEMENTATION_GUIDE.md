@@ -48,9 +48,18 @@ Media Insights Engine is a _serverless_ architecture on AWS. The following diagr
 
 The following Cloudformation templates can be used to install MIE (the framework) and the Media Insights front-end application in your AWS account. 
 
-Use option 1 if you already have MIE installed. Use option 2 if you need to install both MIE and the Media Insights front-end application.
+ Use option 1 if you need to install both MIE and the Media Insights front-end application. Use option 2 if you already have MIE installed.
 
-#### *Option 1:* Install front-end only
+#### *Option 1:* Install MIE back-end + MIE front-end
+
+If you do not have MIE deployed in your account, then use one of the following buttons to deploy both MIE and the Media Insights front-end application. This will deploy a prebuilt version of the most recent MIE release.
+
+Region| Launch
+------|-----
+US East (N. Virginia) | [![Launch in us-east-1](doc/images/launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=mie&templateURL=https://rodeolabz-us-east-1.s3.amazonaws.com/content-analysis-solution/v1.0.0/cf/aws-content-analysis-deploy-mie.template)
+US West (Oregon) | [![Launch in us-west-2](doc/images/launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=mie&templateURL=https://rodeolabz-us-west-2.s3.amazonaws.com/content-analysis-solution/v1.0.0/cf/aws-content-analysis-deploy-mie.template)
+
+#### *Option 2:* Install MIE front-end web portal only (you already have MIE back-end /aws-media-insights-engine installed)
 
 If you already have MIE deployed in your account, then use one of the following buttons to deploy the Media Insights front-end application.
 
@@ -59,14 +68,7 @@ Region| Launch
 US East (N. Virginia) | [![Launch in us-east-1](doc/images/launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=mie&templateURL=https://rodeolabz-us-east-1.s3.amazonaws.com/content-analysis-solution/v1.0.0/cf/aws-content-analysis.template)
 US West (Oregon) | [![Launch in us-west-2](doc/images/launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=mie&templateURL=https://rodeolabz-us-west-2.s3.amazonaws.com/content-analysis-solution/v1.0.0/cf/aws-content-analysis.template)
 
-#### *Option 2:* Install back-end + front-end
 
-If you do not have MIE deployed in your account, then use one of the following buttons to deploy both MIE and the Media Insights front-end application. This will deploy a prebuilt version of the most recent MIE release.
-
-Region| Launch
-------|-----
-US East (N. Virginia) | [![Launch in us-east-1](doc/images/launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=mie&templateURL=https://rodeolabz-us-east-1.s3.amazonaws.com/content-analysis-solution/v1.0.0/cf/aws-content-analysis-deploy-mie.template)
-US West (Oregon) | [![Launch in us-west-2](doc/images/launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=mie&templateURL=https://rodeolabz-us-west-2.s3.amazonaws.com/content-analysis-solution/v1.0.0/cf/aws-content-analysis-deploy-mie.template)
 
 # 3. Security
 
